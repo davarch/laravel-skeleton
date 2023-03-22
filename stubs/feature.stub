@@ -1,0 +1,15 @@
+<?php
+
+declare(strict_types=1);
+
+namespace {{ namespace }};
+
+use Illuminate\Support\Lottery;
+
+final class {{ class }}
+{
+    public function resolve(mixed $scope): mixed
+    {
+        return false;
+    }
+}
