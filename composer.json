@@ -19,6 +19,7 @@
     "require-dev": {
         "barryvdh/laravel-debugbar": "^3.8",
         "barryvdh/laravel-ide-helper": "^2.13",
+        "davarch/strict-stubs": "^2.0",
         "fakerphp/faker": "^1.9.1",
         "laravel/pint": "^1.0",
         "laravel/sail": "^1.18",
@@ -51,6 +52,7 @@
         ],
         "post-update-cmd": [
             "@php artisan vendor:publish --tag=laravel-assets --ansi --force",
+            "@php artisan davarch-stub:publish --force",
             "@php artisan ide-helper:generate",
             "@php artisan ide-helper:meta"
         ],
